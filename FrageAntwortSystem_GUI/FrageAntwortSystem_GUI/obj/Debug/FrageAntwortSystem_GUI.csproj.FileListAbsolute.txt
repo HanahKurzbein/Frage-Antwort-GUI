@@ -1,0 +1,11 @@
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\bin\Debug\FrageAntwortSystem_GUI.exe.config
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\bin\Debug\FrageAntwortSystem_GUI.exe
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\bin\Debug\FrageAntwortSystem_GUI.pdb
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.csproj.AssemblyReference.cache
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.Form1.resources
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.Properties.Resources.resources
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.csproj.GenerateResource.cache
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.csproj.CoreCompileInputs.cache
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.exe
+C:\Users\h.kurzbein\source\repos\FrageAntwortSystem_GUI\FrageAntwortSystem_GUI\obj\Debug\FrageAntwortSystem_GUI.pdb
