@@ -60,9 +60,9 @@ namespace FrageAntwortSystem_GUI
         private void button10_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();          // Items sollen verschwinden
-            helfer.FBLöschen();
-            helfer.FragenBlöcke(1,0);           // Bildet die Fragenblöcke
-            ListBoxFill();                   //
+            helfer.FBLöschen();              // Liste wird greinigt, aber Einträge bleiben bestehen
+            helfer.FragenBlöcke(1,0);        // Bildet die Fragenblöcke
+            ListBoxFill();                   
         }
     }
 }
