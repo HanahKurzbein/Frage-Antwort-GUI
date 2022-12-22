@@ -13,10 +13,10 @@ namespace FrageAntwortSystem_GUI
     public partial class Form1 : Form
     {
 
-        Helferlein helfer = new Helferlein();
+        private Helferlein helfer = new Helferlein();
         public Form1()
         {
-            InitializeComponent();   // ???
+            InitializeComponent();   // Ruft die Form1.cs Entwurf auf
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -25,9 +25,10 @@ namespace FrageAntwortSystem_GUI
         }
 
         
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // 
         {
             helfer.Einlesen();    // FragenList wird ausgelesen
+            helfer.FragenBlöcke(0,0); 
             ListBoxFill();        // ListBox wird mit FragenListe gefüllt
 
         }
@@ -51,8 +52,17 @@ namespace FrageAntwortSystem_GUI
         {
             foreach (string frage in helfer.GetList())
             {
-                listBox1.Items.Add(frage);   // listBox wird mit der ganzen Liste(FragenListe) gefüllt (Eine Zeile in FragenListe entspricht ein Item in ListBox)
+                listBox1.Items.Add(frage);                // listBox wird mit der ganzen Liste(FragenListe) gefüllt (Eine Zeile in FragenListe entspricht ein Item in ListBox)
+
             }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();          // Items sollen verschwinden
+            helfer.FBLöschen();
+            helfer.FragenBlöcke(1,0);           // Bildet die Fragenblöcke
+            ListBoxFill();                   //
         }
     }
 }
