@@ -37,11 +37,8 @@ namespace FrageAntwortSystem_GUI
         }
         public void FragenBlöcke(int x, int y)                                            // Bildet die FragenBlöcke und übergibt in den Klammern Variable
         {
-            
-
             foreach (string line in FragenListe)                                           // Für jede Zeile in der FragenListe
-            {
-
+            {                
                 if (line.Contains($"000{x}{y}") & !line.Contains($"000{x}9"))               // Wenn in FragenListe 000 enthalten ist & wenn(solange) in FragenListe keine 9 enthalten ist
                 {
                     if (!line.Contains($"000{x}1"))
@@ -49,13 +46,17 @@ namespace FrageAntwortSystem_GUI
                         FragenBlock.Add(line);
                         y++;
                     }
-                    else
+                    else if (line.Contains($"000{x}1"))
                     {
                         FragenBlock.Add(line);
-                    }
+                    }                    
+                }
+                else if (line.Contains($"000{x}2") & !line.Contains($"000{x}9"))
+                {
+                    FragenBlock.Add(line);
+                    y = 3;
                 }
             }
-            
         }
         public void FBLöschen()
         {

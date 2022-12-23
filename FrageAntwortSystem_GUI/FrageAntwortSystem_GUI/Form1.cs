@@ -12,7 +12,8 @@ namespace FrageAntwortSystem_GUI
 {
     public partial class Form1 : Form
     {
-
+        int x = 0;
+        int z = 1;
         private Helferlein helfer = new Helferlein();
         public Form1()
         {
@@ -28,7 +29,7 @@ namespace FrageAntwortSystem_GUI
         private void button1_Click(object sender, EventArgs e) // 
         {
             helfer.Einlesen();    // FragenList wird ausgelesen
-            helfer.FragenBlöcke(0,0); 
+            helfer.FragenBlöcke(x,0); 
             ListBoxFill();        // ListBox wird mit FragenListe gefüllt
 
         }
@@ -53,7 +54,6 @@ namespace FrageAntwortSystem_GUI
             foreach (string frage in helfer.GetList())
             {
                 listBox1.Items.Add(frage);                // listBox wird mit der ganzen Liste(FragenListe) gefüllt (Eine Zeile in FragenListe entspricht ein Item in ListBox)
-
             }
         }
 
@@ -61,7 +61,7 @@ namespace FrageAntwortSystem_GUI
         {
             listBox1.Items.Clear();          // Items sollen verschwinden
             helfer.FBLöschen();              // Liste wird greinigt, aber Einträge bleiben bestehen
-            helfer.FragenBlöcke(1,0);        // Bildet die Fragenblöcke
+            helfer.FragenBlöcke(z++,0);        // Bildet die Fragenblöcke
             ListBoxFill();                   
         }
     }
